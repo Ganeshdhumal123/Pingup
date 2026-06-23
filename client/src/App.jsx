@@ -3,6 +3,10 @@ import { Route , Routes} from 'react-router-dom'
 import Feed from './pages/Feed'
 import Messages from './pages/Messages'
 import Chatbox from './pages/ChatBox'
+import Login from './pages/Login'
+import Connections from './pages/Connections'
+import Profile from './pages/Profile'
+import CreatePost from './pages/CreatePost'
 
 export const App = () => {
   return (
@@ -14,12 +18,13 @@ export const App = () => {
         <Route path='messages/:userid' element={<Chatbox/>}/>
         <Route path='connections' element={<Connections/>}/>
         <Route path='profile' element={<Profile/>}/>
-         <Route path='profile/:profileId' element={<Profile/>}/>
+        <Route path='profile/:profileId' element={<Profile/>}/>
         <Route path='create-post' element={<CreatePost/>}/>
 
       </Route>
     </Routes>
 
     </>
-  )
+  );
 }
+export default App;
