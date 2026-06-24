@@ -5,6 +5,7 @@ import Messages from './pages/Messages'
 import Chatbox from './pages/ChatBox'
 import Login from './pages/Login'
 import Connections from './pages/Connections'
+import Discovers from './pages/Discover'
 import Profile from './pages/Profile'
 import CreatePost from './pages/CreatePost'
 import {useUser} from '@clerk/clerk-react'
@@ -18,6 +19,7 @@ export const App = () => {
         <Route index element={<Feed/>}/>
         <Route path='messages' element={<Messages/>}/>
         <Route path='messages/:userid' element={<Chatbox/>}/>
+        <Route path='discover' element={<Discovers/>}/>
         <Route path='connections' element={<Connections/>}/>
         <Route path='profile' element={<Profile/>}/>
         <Route path='profile/:profileId' element={<Profile/>}/>
